@@ -1,0 +1,364 @@
+@import url('./vendor/normalize.css');
+
+p {
+    margin: 0; 
+} 
+
+.content {
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 48px auto 115px;
+    z-index: -1;
+    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    line-height: 1.3;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 298px;
+    border-left: solid #cccccc 2px;
+    border-bottom: solid #cccccc 2px;
+    width: 951px;
+    height: 1693px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.header__logo {
+    width: 150px;
+    height: 40px;
+}
+
+.header__icon {
+    background-image: url('./images/planet.png');
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+
+.main {
+    width: 100%;
+    background-color: #f5f0f0;
+}
+
+.intro {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.intro__container {
+    width: 550px;
+    height: 440px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 20;
+    background-color: #ffffff;
+    padding: 54px 47px 53px 62px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.intro__bg {
+    background-image: url('./images/intro.jpg');
+    width: 920px;
+    height: 570px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.intro__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #336699;
+    padding: 0 0 30px 0;
+    margin: 0; 
+}
+
+.intro__text {
+    color: #333333;
+    font-size: 16px;
+    padding: 0 0 25px 0;
+    margin: 0; 
+}
+
+.intro__text:last-of-type {
+    padding-bottom: 0;
+}
+
+.projects {
+    width: 100%;
+}
+
+.projects__container {
+    padding: 105px 222px 62px 330px;
+}
+
+.projects__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #336699;
+    padding: 0 0 30px 0;
+    margin: 0; 
+}
+
+.projects__text {
+    color: #333333;
+    font-size: 16px;
+    margin: 0; 
+}
+
+.projects__text_under {
+    width: 704px;
+    color: #333333;
+    font-size: 16px;
+    margin: 55px 0 0 330px;
+}
+
+
+.projects__swiper-slide {
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+
+.projects__swiper-img {
+    width: 920px;
+    height: 555px;
+}
+
+
+.projects__swiper-button {
+    background-image: url('./images/arrows.png');
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    right: 58px;
+    bottom: 58px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.projects__swiper-subtitle {
+    color: #333333;
+    font-size: 18px;
+    padding: 0 0 22px 0;
+    margin: 0;
+}
+
+.projects__swiper-text {
+    color: #333333;
+    font-size: 16px;
+    width: 354px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.projects__swiper-text-box {
+    background-color: #ffffff;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    height: 390px;
+    padding: 63px 60px 60px 50px;
+    box-sizing: border-box;
+}
+
+.inteco-now {
+    padding-top: 100px;
+}
+
+.inteco-now__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #336699;
+    padding: 0 0 30px 60px;
+    margin: 0;
+}
+
+.inteco-now__text {
+    color: #333333;
+    font-size: 16px;
+}
+
+.inteco-now__row {
+    display: flex;
+}
+
+.inteco-now__text_left {
+    max-width: 493px;
+    margin-right: 95px;
+}
+
+.inteco-now__row {
+    width: 90.4%;
+    margin: 0 auto;
+}
+
+.inteco-now__column {
+    margin-right: 70px;
+}
+
+.inteco-now__column:last-of-type {
+    margin-right: 0;
+}
+
+.inteco-now__numbers {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.inteco-now__number {
+    font-size: 48px;
+    line-height: 0.8;
+}
+
+.inteco-now__bg {
+    background-image: url('./images/inteko.jpg');
+    width: 920px;
+    height: 570px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.inteco-now__row_bg {
+    position: relative; 
+    justify-content: flex-end;
+    width: 100%;
+    margin: 58px auto 103px;
+}
+
+.inteco-now__container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 20;
+    max-width: 470px;
+    min-height: 500px;
+}
+
+.inteco-now__list {
+    margin: 67px 42px 0 60px;
+    padding-left: 26px;
+    position: relative;
+}
+
+.inteco-now__list-text {
+    color: #333333;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+
+/* .inteco-now__list-text::before {
+    content: ""; 
+    border-bottom: 2px #336699 solid;
+    width: 16px;
+    height: 2px;
+    display: inline-block;
+    margin: 0 0 3px -26px;
+} */
+
+.principals__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #336699;
+    margin: 0 0 60px 60px;
+}
+
+.principals__swiper {
+    margin: 0 0 0 60px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 50px 60px 60px 50px;
+}
+
+.principals__swiper-button {
+    position: absolute;
+    top: 47px;
+    right: 60px;
+    background-image: url('./images/arrows.png');
+    width: 20px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.principals__swiper-title {
+    color: #333333;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.principals__swiper-divider {
+    background-image: url('./images/divider.png');
+    width: 100%;
+    height: 4px;
+    margin-bottom: 40px;
+}
+
+.principals__swiper-text {
+    color: #333333;
+    font-size: 16px;
+}
+
+.company__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #336699;
+    margin: 102px 0 60px 330px;
+}
+
+.company__swiper-img {
+    width: 780px;
+    height: 577px;
+    margin-top: 50px;
+}
+
+.company__swiper {
+    position: relative;
+}
+
+.company__swiper-button {
+    position: absolute;
+    bottom: -160px;
+    left: 60px;
+    background-image: url('./images/arrows.png');
+    width: 20px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+/* 
+.company__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+} */
+
